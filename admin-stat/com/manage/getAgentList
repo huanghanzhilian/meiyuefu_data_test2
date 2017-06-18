@@ -1,0 +1,89 @@
+{
+  "success": true,
+  "object": {
+    "infoList": [
+      {
+        "agentEnterprise": "总部",
+        "loginNum": 0,
+        "agentId": "656276496872120320",
+        "briefName": "世纪鸿源总部",
+        "id": "656276496872120320",
+        "agentName": "周拥",
+        "agentIdCard": "AHdwkLuPYlbb3LUnIn4pNGRJ4UqQMbovLzm+0BveNiY5LmWyZ6FPz+xaBT95IuAgYeYGm5f/rFAL\njbgWwhReWFaYzYjPor+DL0PiAgow8U1g4pF0PsYvnePSOkGIT/NcGnhS6BtWsKQtjBYUXbWv2e25\nCGT3nBvVlIXQbbEIM1k=\n",
+        "isOnWork": "离职",
+        "agentIdCardText": "130625199206295714",
+        "wbId": "16975666191878",
+        "wbUserName": "xly8882013",
+        "agentPhone": "13240999906",
+        "parentPath": "/1/638584744304451584/659929636922208256"
+      },{
+        "agentEnterprise": "总部",
+        "loginNum": 0,
+        "agentId": "656276496872120320",
+        "briefName": "世纪鸿源总部",
+        "id": "656276496872120320",
+        "agentName": "周拥",
+        "agentIdCard": "AHdwkLuPYlbb3LUnIn4pNGRJ4UqQMbovLzm+0BveNiY5LmWyZ6FPz+xaBT95IuAgYeYGm5f/rFAL\njbgWwhReWFaYzYjPor+DL0PiAgow8U1g4pF0PsYvnePSOkGIT/NcGnhS6BtWsKQtjBYUXbWv2e25\nCGT3nBvVlIXQbbEIM1k=\n",
+        "isOnWork": "离职",
+        "agentIdCardText": "130625199206295714",
+        "wbId": "16975666191878",
+        "wbUserName": "xly8882013",
+        "agentPhone": "13240999906",
+        "parentPath": "/1/638584744304451584/659929636922208256"
+      },{
+        "agentEnterprise": "总部",
+        "loginNum": 0,
+        "agentId": "656276496872120320",
+        "briefName": "世纪鸿源总部",
+        "id": "656276496872120320",
+        "agentName": "周拥",
+        "agentIdCard": "AHdwkLuPYlbb3LUnIn4pNGRJ4UqQMbovLzm+0BveNiY5LmWyZ6FPz+xaBT95IuAgYeYGm5f/rFAL\njbgWwhReWFaYzYjPor+DL0PiAgow8U1g4pF0PsYvnePSOkGIT/NcGnhS6BtWsKQtjBYUXbWv2e25\nCGT3nBvVlIXQbbEIM1k=\n",
+        "isOnWork": "离职",
+        "agentIdCardText": "130625199206295714",
+        "wbId": "16975666191878",
+        "wbUserName": "xly8882013",
+        "agentPhone": "13240999906",
+        "parentPath": "/1/638584744304451584/659929636922208256"
+      },{
+        "agentEnterprise": "总部",
+        "loginNum": 0,
+        "agentId": "656276496872120320",
+        "briefName": "世纪鸿源总部",
+        "id": "656276496872120320",
+        "agentName": "周拥",
+        "agentIdCard": "AHdwkLuPYlbb3LUnIn4pNGRJ4UqQMbovLzm+0BveNiY5LmWyZ6FPz+xaBT95IuAgYeYGm5f/rFAL\njbgWwhReWFaYzYjPor+DL0PiAgow8U1g4pF0PsYvnePSOkGIT/NcGnhS6BtWsKQtjBYUXbWv2e25\nCGT3nBvVlIXQbbEIM1k=\n",
+        "isOnWork": "离职",
+        "agentIdCardText": "130625199206295714",
+        "wbId": "16975666191878",
+        "wbUserName": "xly8882013",
+        "agentPhone": "13240999906",
+        "parentPath": "/1/638584744304451584/659929636922208256"
+      },{
+        "agentEnterprise": "总部",
+        "loginNum": 0,
+        "agentId": "656276496872120320",
+        "briefName": "世纪鸿源总部",
+        "id": "656276496872120320",
+        "agentName": "周拥",
+        "agentIdCard": "AHdwkLuPYlbb3LUnIn4pNGRJ4UqQMbovLzm+0BveNiY5LmWyZ6FPz+xaBT95IuAgYeYGm5f/rFAL\njbgWwhReWFaYzYjPor+DL0PiAgow8U1g4pF0PsYvnePSOkGIT/NcGnhS6BtWsKQtjBYUXbWv2e25\nCGT3nBvVlIXQbbEIM1k=\n",
+        "isOnWork": "离职",
+        "agentIdCardText": "130625199206295714",
+        "wbId": "16975666191878",
+        "wbUserName": "xly8882013",
+        "agentPhone": "13240999906",
+        "parentPath": "/1/638584744304451584/659929636922208256"
+      }
+    ],
+    "pageNum": 1,
+    "pageSize": 20,
+    "totalPage": 8,
+    "totalCount": 76,
+    "defaultPageNum": "10",
+    "__isset_bit_vector": [
+      1,
+      1,
+      1,
+      1
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<!-- $Id: index.html 16578 2016-07-21 06:06:35Z caoke $ -->
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>支付成功页面 - 58金融</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://static.58.com/back/favicon.ico" />
+    <link rel="stylesheet" href="/static-stat/dep/bootstrap_3.3.4/css/bootstrap.min.css"/>
+
+    <script src="/static-stat/_common/libs/jquery/1.10.2/jquery.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        你的订单已支付成功！
+        <a id="go" href="/manage/#/user/clean?pstatus=8">点击跳转到列表</a>
+        <span id="auto">3秒后自动跳转</span>
+    </div>
+</div>
+<script>
+    function autourl(time){
+        $("#auto").text(time+"秒后自动跳转")
+        if(time>0){
+            setTimeout(function(){
+                autourl(--time)
+            },1000)
+        }else{
+            location.href=$("#go").attr("href")
+        }
+
+    }
+    autourl(5)
+</script>
+</body>
+</html>

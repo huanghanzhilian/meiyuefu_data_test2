@@ -1,0 +1,70 @@
+<style >.modal-title{padding:5px 0;text-align:center}.modify-agent-info .modal-group{margin-bottom:20px;height:32px}.modify-agent-info .modal-group label{width:90px;height:32px;line-height:32px;text-align:right;float:left}.modify-agent-info .modal-group .list-filter-col{margin-top:0;margin-left:10px}.modify-agent-info .modal-group .transfer-input{margin:0 8px;width:130px;float:left}.modify-agent-info .transfer-modal{padding:30px 35px}.modify-agent-info .transfer-modal label{width:auto}.modify-agent-info .group-item{margin-left:100px;height:33px;width:178px}.modify-agent-info .group-item input{padding-left:8px;width:100%;height:30px;border:1px solid #b9cbe1}.modify-agent-info .modal-footer{text-align:center}.modify-agent-info .modal-footer .btn-submit,.modify-agent-info .modal-footer .btn-cancel{width:80px;height:30px}.modify-agent-info .modal-footer .btn-submit{margin-left:35px}.modify-agent-info .modal-footer .btn-cancel{background:#fafbfe;border:1px solid #acbfd9;margin-left:18px;color:#4c5379}.modify-agent-info .no-mpdify{background:#eee;color:#aaa}.modify-agent-info .data-info{width:178px;line-height:32px;margin-left:-10px}.ui-suggestion{position:relative;width:auto}.ui-suggestion .dropdown-tooltip{position:absolute;top:100%;left:-1px;z-index:1000;float:left;min-width:160px;font-size:14px;text-align:left;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175)}.ui-suggestion .dropdown-tooltip ul{list-style:none;background:none repeat scroll 0 0 #fff;border:1px solid #B9CBE1;display:block;margin:0;min-height:10px;padding:0;width:402px;position:relative;z-index:100}.ui-suggestion .dropdown-tooltip ul li{color:#333;cursor:pointer;display:block;font-size:14px;height:30px;line-height:30px;text-decoration:none;text-indent:7px;overflow:hidden;white-space:nowrap}.ui-suggestion .dropdown-tooltip ul li cite{color:#999;font-size:12px;font-style:normal;font-weight:400;padding-left:10px}.ui-suggestion .dropdown-tooltip ul li:hover{background:#f0f0f0}.ui-suggestion.ui-hover{border:1px solid #8ABCF9}.ui-suggestion.ui-error{border:1px solid #fd634f}</style>
+<div class="block clearfix">
+    <form name="searchForm" novalidate ng-submit="search($event)">
+        <div class="list-filter-col">
+            <label>房管员姓名</label>
+            <input type="text" class="form-control" ng-model="queryParams.agentName" jr-placeholder="房管员姓名" required/>
+        </div>
+
+        <div class="list-filter-col">
+            <label>手机号</label>
+            <input type="text" class="form-control" ng-model="queryParams.agentPhone" jr-placeholder="手机号" required/>
+        </div>
+
+        <div class="list-filter-col">
+            <label>分店</label>
+            <input type="text" class="form-control" ng-model="queryParams.agentEnterprise" jr-placeholder="分店" required/>
+        </div>
+
+
+        <div class="list-filter-col">
+                <jr-dropdown-button options="queryOptions.isvalid" value="queryParams.isvalid" class="w120"></jr-dropdown-button>
+        </div>
+
+        <div class="list-filter-col" ng-if="userInfo.roleId=='101'">
+            <button class="btn btn-output" type="button" ng-click="search()">查询</button>
+        </div>
+        <div class="pos-rb">
+            <div class="list-filter-col">
+                <button class="btn btn-primary" type="submit"><i class="icon icon-search"></i>查找</button>
+            </div>
+            <div class="list-filter-col">
+                <button class="btn btn-default" type="button" ng-click="clearParams()">清空查询项</button>
+            </div>
+
+        </div>
+
+    </form>
+</div>
+
+
+<div class="table-con" id="guest-table">
+<table class="table break-all">
+    <thead>
+        <tr>
+            <th>房管员姓名</th>
+            <th>电话号码</th>
+            <th>分店</th>
+            <th>身份证号</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="order in orders.infoList">
+            <td>{{order.agentName}}</td>
+            <td>{{order.agentPhone}}</td>
+            <td>{{order.agentEnterprise}}</td>
+            <td>{{order.agentIdCardText}}</td>
+            <td>{{order.isOnWork}}</td>
+            <td>
+                <a href="javascript:;" class="mr-s"  ng-click="look($event, order)">查看</a>
+                <a href="javascript:;" class="mr-s" ng-click="modify($event, order)">修改</a>
+                <!-- <a ng-href="#/company/{{order.companyId}}?type=edit"  ng-if="userInfo.roleId=='101'" target="_blank">编辑</a> -->
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<pagination total-items="orders.totalCount" page="orders.pageNum" max-size="9"></pagination>

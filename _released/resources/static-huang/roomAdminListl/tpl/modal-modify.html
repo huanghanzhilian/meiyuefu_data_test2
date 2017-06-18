@@ -1,0 +1,49 @@
+<div class="modal-header">
+    <a href="javascript:void(0)" ng-click="$dismiss('cancel')" class="modal-close"></a>
+    <h3 class="modal-title">修改房管员信息</h3>
+</div>
+<form name="modifyForm" novalidate class="modify-agent-info">
+    <div class="modal-body">
+       <div class="modal-group">
+           <label for="agentName">姓名：</label>
+           <div class="group-item">
+               <input type="text" name="agentName" id="agentName" value="" autocomplete="off" required ng-model="data.agentName"/>
+           </div>
+       </div>
+       <div class="modal-group">
+           <label for="agentPhone">手机号：</label>
+           <div class="group-item">
+               <input type="text" name="agentPhone" id="agentPhone" value="" autocomplete="off" required ng-model="data.agentPhone" maxlength="11"/>
+           </div>
+       </div>
+       <div class="modal-group">
+           <label for="agentIdCardText">身份证号：</label>
+           <div class="group-item">
+               <input type="text" name="agentIdCardText" id="agentIdCardText" value="" autocomplete="off" required ng-model="data.agentIdCardText" maxlength="18"/>
+           </div>
+       </div>
+       <div ng-if="appTestCompany == 0" class="modal-group">
+           <label for="wbUserName">58账号：</label>
+           <div class="group-item">
+               <input type="text" name="wbUserName" id="wbUserName" value="" autocomplete="off" required ng-model="data.wbUserName"/>
+           </div>
+       </div>
+        <div class="modal-group">
+            <label for="agentEnterprise">分店：</label>
+            <div class="group-item">
+                <input type="text" name="agentEnterprise" id="agentEnterprise" value="" required ng-model="data.agentEnterprise" maxlength="64" />
+            </div>
+        </div>
+        <div class="modal-group">
+            <label for="status">状态：</label>
+            <div class="list-filter-col">
+                <jr-dropdown-button options="queryOptions.isOnWork" value="data.isOnWork" class="w180"></jr-dropdown-button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <p class="error-info">{{errorInfo}}</p>
+        <button class="btn btn-primary btn-submit" ng-disabled="modifyForm.$invalid" ng-click="submit()" type="submit">确定</button>
+        <button class="btn btn-cancel" ng-click="$dismiss('cancel')" >取消</button>
+    </div>
+</form>
